@@ -130,7 +130,7 @@ body {
     }
     .country-name {
         width: 20.5%;
-        text-align: left;
+        text-align: center;
     }
     .country-div {
         min-width: 100%;
@@ -143,5 +143,22 @@ body {
     .country-name,
     .country-population {
         font-size: 0.8rem;
+    }
+}
+
+@media (max-height: 530px) {
+    .nav {
+        height: 25vh;
+    }
+    .country-div {
+        height: 15vh;
+    }
+    .country-bar {
+        height: 85%;
+        width: 55%;
+        margin-top: 0.3em;
+    }
+    .country-name {
+        text-align: right;
     }
 }
