@@ -18,6 +18,12 @@ const populationButton = async() => {
         createCountryBar("WORLD", totalWorldPop, 100)
         const countriesToCreate = tenMostPopulatedCountries(countries)
         countriesToCreate.forEach(element => {
+            if (element.name == 'United States of America') {
+                element.name = 'USA'
+            }else if (element.name == 'Russian Federation'){
+                element.name = 'Russia'
+            }
+            
             createCountryBar(element.name, element.population, calculatePercentage(totalWorldPop, element.population))
         });
 

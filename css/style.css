@@ -109,3 +109,39 @@ body {
     color: var(--bckgColor);
     text-decoration: solid;
 }
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+    #main-title {
+            font-size: 2rem;
+        }
+    #nav-parag {
+        line-height: 100%;
+    }
+    .button {
+        margin-right: 7.5%;
+        margin-left: 7.5%;
+    }
+    .header{
+        min-height: 15vh;
+    }
+    .country-name {
+        width: 20.5%;
+        text-align: left;
+    }
+    .country-div {
+        min-width: 100%;
+        margin-left: 0%;
+    }
+    .country-population {
+        float: right;
+        margin-right: 0%;
+    }
+    .country-name,
+    .country-population {
+        font-size: 0.8rem;
+    }
+}
